@@ -1,0 +1,255 @@
+<!-- Tutorial 5 exercise-->
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> Tutorial 5 </title>
+		<style>
+			.correct{
+				color:green;
+				font-weight:bold;
+			}
+			.incorrect{
+				color:red;
+				font-weight:bold;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>A Simple Maths Game</h1>
+		<p>
+		<strong>Question 1</strong>:
+		<span id="question1"></span>
+		<span id="answer1"></span>
+		<span id="feedback1"></span>
+		</p>
+		
+		<p>
+		<strong>Question 2</strong>:
+		<span id="question2"></span>
+		<span id="answer2"></span>
+		<span id="feedback2"></span>
+		</p>
+		
+		<p>
+		<strong>Question 3</strong>:
+		<span id="question3"></span>
+		<span id="answer3"></span>
+		<span id="feedback3"></span>
+		</p>
+		
+		<p>
+		<strong>Question 4</strong>:
+		<span id="question4"></span>
+		<span id="answer4"></span>
+		<span id="feedback4"></span>
+		</p>
+		
+		<p>
+		<strong>Question 5</strong>:
+		<span id="question5"></span>
+		<span id="answer5"></span>
+		<span id="feedback5"></span>
+		</p>
+		
+		<p>
+		<strong>Question 6</strong>:
+		<span id="question6"></span>
+		<span id="answer6"></span>
+		<span id="feedback6"></span>
+		</p>
+		
+		<p>
+		<strong>Question 7</strong>:
+		<span id="question7"></span>
+		<span id="answer7"></span>
+		<span id="feedback7"></span>
+		</p>
+		
+		<p>
+		<strong>Question 8</strong>:
+		<span id="question8"></span>
+		<span id="answer8"></span>
+		<span id="feedback8"></span>
+		</p>
+		
+		<p>
+		<strong>Question 9</strong>:
+		<span id="question9"></span>
+		<span id="answer9"></span>
+		<span id="feedback9"></span>
+		</p>
+		
+		<p>
+		<strong>Question 10</strong>:
+		<span id="question10"></span>
+		<span id="answer10"></span>
+		<span id="feedback10"></span>
+		</p>
+		
+		<p>
+			<script>
+			let Q1 = "8+7=...";
+			let input1=prompt(Q1);
+			
+			document.getElementById("question1").innerHTML=Q1;
+			document.getElementById("answer1").innerHTML=input1;
+			
+			if(parseInt(Input)== eval (8+7)){
+				document.getElementById("feedback").innerHTML="&#10003";
+				
+			}
+			</script>
+			
+			<script>
+			let Q2 = "34-16=...";
+			let input1=prompt(Q2);
+			
+			document.getElementById("question2").innerHTML=Q2;
+			document.getElementById("answer2").innerHTML=input1;
+			</script>
+			
+			<script>
+			let Q3 = "12*6=...";
+			let input1=prompt(Q3);
+			
+			document.getElementById("question3").innerHTML=Q3;
+			document.getElementById("answer3").innerHTML=input1;
+			</script>
+			
+			<script>
+			let Q4 = "26-7=...";
+			let input1=prompt(Q4);
+			
+			document.getElementById("question4").innerHTML=Q4;
+			document.getElementById("answer4").innerHTML=input1;
+			</script>
+			
+			<script>
+			let Q5 = "80/20=...";
+			let input1=prompt(Q5);
+			
+			document.getElementById("question5").innerHTML=Q5;
+			document.getElementById("answer5").innerHTML=input1;
+			</script>
+			
+			<script>
+			let Q6 = "27+16=...";
+			let input1=prompt(Q6);
+			
+			document.getElementById("question6").innerHTML=Q6;
+			document.getElementById("answer6").innerHTML=input1;
+			</script>
+			
+			<script>
+			let Q7 = "42-11=...";
+			let input1=prompt(Q7);
+			
+			document.getElementById("question7").innerHTML=Q7;
+			document.getElementById("answer7").innerHTML=input1;
+			</script>
+			
+			<script>
+			let Q8 = "31*5=...";
+			let input1=prompt(Q8);
+			
+			document.getElementById("question8").innerHTML=Q8;
+			document.getElementById("answer8").innerHTML=input1;
+			</script>
+			
+			<script>
+			let Q9 = "48/6=...";
+			let input1=prompt(Q9);
+			
+			document.getElementById("question9").innerHTML=Q9;
+			document.getElementById("answer9").innerHTML=input1;
+			</script>
+			
+			<script>
+			let Q10 = "9*4=...";
+			let input1=prompt(Q10);
+			
+			document.getElementById("question10").innerHTML=Q10;
+			document.getElementById("answer10").innerHTML=input1;
+			</script>
+	</body>
+	
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A Simple Maths Game</title>
+    <style>
+      .correct {
+        color: green;
+        font-weight: bold;
+      }
+
+      .incorrect {
+        color: red;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A Simple Maths Game</h1>
+    <p>Test your maths skills by answering the following questions:</p>
+    <div>
+      <span id="question1"> </span>
+      <span> = </span>
+      <input type="text" id="answer1" />
+      <button onclick="checkAnswer(1)">Submit</button>
+      <span id="feedback1"> </span>
+    </div>
+    <div>
+      <span id="question2"> </span>
+      <span> = </span>
+      <input type="text" id="answer2" />
+      <button onclick="checkAnswer(2)">Submit</button>
+      <span id="feedback2"> </span>
+    </div>
+    <div>
+      <span id="question3"> </span>
+      <span> = </span>
+      <input type="text" id="answer3" />
+      <button onclick="checkAnswer(3)">Submit</button>
+      <span id="feedback3"> </span>
+    </div>
+
+    <script>
+      function checkAnswer(questionNumber) {
+        var question = document.getElementById(
+          "question" + questionNumber
+        ).innerHTML;
+        var userAnswer = document.getElementById(
+          "answer" + questionNumber
+        ).value;
+
+        
+        var questionValue = eval(question);
+        var userAnswerValue = parseInt(userAnswer);
+
+       
+        if (questionValue === userAnswerValue) {
+          document.getElementById("feedback" + questionNumber).innerHTML =
+            "Correct!";
+          document.getElementById("feedback" + questionNumber).className =
+            "correct";
+        } else {
+          document.getElementById("feedback" + questionNumber).innerHTML =
+            "Incorrect!";
+          document.getElementById("feedback" + questionNumber).className =
+            "incorrect";
+        }
+      }
+
+      
+      document.getElementById("question1").innerHTML = "8 + 7";
+      document.getElementById("question2").innerHTML = "12 * 6";
+      document.getElementById("question3").innerHTML = "47 - 35";
+
+      
+    </script>
+  </body>
+</html>

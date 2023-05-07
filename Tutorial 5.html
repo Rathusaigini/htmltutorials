@@ -1,0 +1,62 @@
+<!-- Tutorial 5 exercise-->
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> Tutorial 4 </title>
+		<style>
+			h1,h2{
+				text-align:center;
+				color:#008080;
+			}
+			#fs1{
+				background-color:#3aaeb5;
+			}
+			#fs2{
+				background-color:#008080;
+			}
+			label{
+				float:left;
+				width:20%;
+			}
+			input[type=text]{
+				height:20px;
+				width:100px
+			}
+		</style>
+	</head>
+		<body>
+			<h1>Welcome to ABC Hotel</h1>
+			<h2>Hotel Room Reservation</h2>
+			<form>
+			<fieldset id="fs1">
+			<legend>Your Details</legend>
+				<label for="fname">First Name :</label>
+				<input type="text" name="fname" id="fname"><br><br>
+				
+				<label for="lname">Last Name :</label>
+				<input type="text" name="lname" id="lname"><br><br>
+				
+				<label for="InDate">In Date :</label>
+				<input type="Date" name="InDate" id="InDate"><br><br>
+				
+				<label for="OutDate">Out Date :</label>
+				<input type="Date" name="OutDate" id="OutDate"><br><br>
+				
+				<label for="Roomtype">Room Type :</label>
+				<select type="Roomtype" name="type">
+					<option>--Select a Room--</option>
+					<option>Single room</option>
+					<option>Double room</option>
+					<option>Triple room</option>
+				</select>
+			</fieldset>
+			<fieldset id="fs2">
+			<label for="terms">I accepted above terms and conditions : </label>
+			<input type="Checkbox" name="chbx" id="terms" value="accept"><br><br>
+				<input type="Submit" value="RESERVE">
+				<input type="Reset" value="RESET">
+			</fieldset>
+			</form>
+		</body>
+	</html>

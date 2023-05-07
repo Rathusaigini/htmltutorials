@@ -1,0 +1,60 @@
+<!-- Tutorial 4 exercise-->
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title> Tutorial 4 </title>
+		<style>
+		form{
+			font-family:
+			font-size:
+		}
+		#field1{
+			background-color:#add8e6;
+		}
+		#field2{
+			background-color: #464eb8;
+		}
+		label{
+			float:left;
+			width:20%;
+			
+		}
+		</style>
+	</head>
+		<body>
+		<div id="wrapper">
+		<h1>University Registration</h1>
+		<form>
+		<fieldset id ="field1">
+		<legend>Your Details</legend>
+		<label for="firstname">First Name: </label>
+		<input type="text" name="firstname" id="firstname" placeholder="Enter your first name"><br>
+		
+		<label for="surname">Surname: </label>
+		<input type="text" name="surname" id="surname" placeholder="Enter your surname"><br>
+		
+		<label for="emailaddress">Email Address: </label>
+		<input type="email" name="emailaddress" id="emailaddress" placeholder="Enter your email"><br>
+		
+		<label for="password">Password: </label>
+		<input type="password" name="password" id="password" size="5"><br><br>
+		
+		<p>Level:</p>
+		<label for="ug">Undergraduate </label>
+		<input type="radio" name="level" id="ug"><br>
+		
+		<label for="pg">Postgraduate </label>
+		<input type="radio" name="level" id="pg"><br><br>
+		
+		<label for="comments">Any comments: </label>
+		<textarea name="comment" id="comment" rows="5" col="20">
+		</textarea><br>
+		</fieldset>
+		<fieldset id ="field2">
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</fieldset>
+		</form>
+		</body>
+	</html>
